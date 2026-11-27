@@ -1,0 +1,118 @@
+{
+  "regions": [
+    {
+      "id": "north-zone",
+      "roles": {
+        "press": [
+          "theory",
+          "practice"
+        ]
+      }
+    },
+    {
+      "id": "river-zone",
+      "roles": {
+        "press": [
+          "theory",
+          "practice"
+        ]
+      },
+      "accepts": [
+        {
+          "issuer": "school-n",
+          "subject": "theory",
+          "until": "2027-02-01T16:00:00Z"
+        }
+      ]
+    }
+  ],
+  "centres": [
+    {
+      "id": "school-n",
+      "region": "north-zone"
+    },
+    {
+      "id": "school-r",
+      "region": "river-zone"
+    }
+  ],
+  "scores": [
+    {
+      "id": "score-nt",
+      "worker": "lark",
+      "centre": "school-n",
+      "role": "press",
+      "subject": "theory",
+      "passed": true,
+      "until": "2027-05-01T00:00:00Z"
+    },
+    {
+      "id": "score-rp",
+      "worker": "lark",
+      "centre": "school-r",
+      "role": "press",
+      "subject": "practice",
+      "passed": true,
+      "until": "2027-05-10T00:00:00Z"
+    },
+    {
+      "id": "score-rt",
+      "worker": "ash",
+      "centre": "school-r",
+      "role": "press",
+      "subject": "theory",
+      "passed": true,
+      "until": "2027-03-01T00:00:00Z"
+    }
+  ],
+  "certificates": [
+    {
+      "id": "cert-r1",
+      "worker": "lark",
+      "region": "river-zone",
+      "role": "press",
+      "scope": [
+        "score-nt",
+        "score-rp"
+      ],
+      "from": "2027-01-01T00:00:00Z",
+      "until": "2027-02-01T16:00:00Z"
+    }
+  ],
+  "exams": [
+    {
+      "id": "exam-r1",
+      "centre": "school-r",
+      "role": "press",
+      "subject": "theory",
+      "from": "2027-02-01T15:00:00Z",
+      "seats": 1
+    },
+    {
+      "id": "exam-r2",
+      "centre": "school-r",
+      "role": "press",
+      "subject": "practice",
+      "from": "2027-02-01T17:00:00Z",
+      "seats": 2
+    }
+  ],
+  "shifts": [
+    {
+      "id": "night-r",
+      "region": "river-zone",
+      "role": "press",
+      "contractor": "fen",
+      "from": "2027-02-01T15:30:00Z",
+      "until": "2027-02-01T19:00:00Z"
+    },
+    {
+      "id": "day-n",
+      "region": "north-zone",
+      "role": "press",
+      "contractor": "salt",
+      "from": "2027-02-01T11:00:00Z",
+      "until": "2027-02-01T13:00:00Z"
+    }
+  ]
+}
