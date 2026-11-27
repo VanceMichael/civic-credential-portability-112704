@@ -63,6 +63,15 @@
       "subject": "theory",
       "passed": true,
       "until": "2027-03-01T00:00:00Z"
+    },
+    {
+      "id": "score-nt2",
+      "worker": "lark",
+      "centre": "school-n",
+      "role": "press",
+      "subject": "theory",
+      "passed": true,
+      "until": "2027-05-01T00:00:00Z"
     }
   ],
   "certificates": [
@@ -113,6 +122,48 @@
       "contractor": "salt",
       "from": "2027-02-01T11:00:00Z",
       "until": "2027-02-01T13:00:00Z"
+    }
+  ],
+  "policyNotices": [
+    {
+      "id": "reciprocity-stop",
+      "region": "river-zone",
+      "issuer": "school-n",
+      "subject": "theory",
+      "from": "2027-02-01T14:00:00Z",
+      "allows": false
+    }
+  ],
+  "examClaims": [
+    {
+      "id": "claim-la",
+      "exam": "exam-r1",
+      "worker": "lark",
+      "at": "2027-02-01T10:00:00Z"
+    },
+    {
+      "id": "claim-as",
+      "exam": "exam-r1",
+      "worker": "ash",
+      "at": "2027-02-01T10:05:00Z"
+    }
+  ],
+  "proofLetters": [
+    {
+      "id": "letter-r",
+      "certificate": "cert-r1",
+      "shift": "night-r",
+      "recordedAt": "2027-01-30T08:00:00Z",
+      "coveredFrom": "2027-02-01T15:30:00Z",
+      "coveredUntil": "2027-02-01T16:00:00Z"
+    }
+  ],
+  "scoreRevisions": [
+    {
+      "id": "rev-nt",
+      "score": "score-nt",
+      "at": "2027-02-01T16:20:00Z",
+      "passed": false
     }
   ]
 }

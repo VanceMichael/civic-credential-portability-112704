@@ -40,6 +40,26 @@ test("历史证照引用科目且夜班跨旧证到期", () => {
     "shifts",
     "region",
     "regions"
+  ],
+  [
+    "proofLetters",
+    "shift",
+    "shifts"
+  ],
+  [
+    "proofLetters",
+    "certificate",
+    "certificates"
+  ],
+  [
+    "examClaims",
+    "exam",
+    "exams"
+  ],
+  [
+    "scoreRevisions",
+    "score",
+    "scores"
   ]
 ]) {
     const ids = new Set(data[related].map((row) => row.id));
